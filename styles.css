@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#head1{
+    background-color: #242590;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    align-items: center;
+}
+.logo{
+    font-size: 1.7rem;
+    color: white;
+}
+span{
+    color: orangered;
+}
+.list ul{
+    display: flex;
+    
+}
+.list ul li a{
+    font-size: 1.0rem;
+    padding: 2rem;
+    margin: 0 .8rem;
+    color: #fff;
+}
+.list ul li a:hover{
+    color: green;
+}
+#welcome{
+    height: 40em;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(pic.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#welcome h1{
+    font-size: 3rem;
+    color: white;
+}
+#welcome p{
+    font-size: 2rem;
+    color: white;
+}
+.bbtn{
+    background: orangered;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    position: relative;
+}
+.bbtn:hover{
+    top: -8px;
+    background-color: #fff;
+    color: #242590;
+}
+.sectext{
+    color: #242590;
+    margin: 0 auto 3rem;
+    border-bottom: .3rem solid #242590;
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+}
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 1183px) {
+    #head1{
+        flex-direction: column;
+    }
+}
+@media (max-width:636px){
+    #container {
+        flex-direction: column;
+    }
+    .list ul li a{
+        padding: 1rem;
+        
+    }
+}
+@media (max-width:452px){
+    .list ul li a{
+        padding: .2rem;
+    }
+    #welcome h1{
+        font-size: 2.5rem;
+    }
+    #welcome p{
+        font-size: 1.5rem;
+    }
+    .bbtn{
+        padding: 1rem;
+    }
+}
